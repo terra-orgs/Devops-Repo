@@ -13,5 +13,11 @@ resource "github_team_membership" "Seyi_Ewegbemi" {
 resource "github_team_membership" "Daniel_Okechukwu" {
   team_id  = "${github_team.devops-team.id}"
   username = "ammanny"
+  role     = "member"
+}
+
+resource "github_team_membership" "prow_job" {
+  team_id  = "${github_team.devops-team.id}"
+  username = "prow-bot-access"
   role     = "maintainer"
 }
