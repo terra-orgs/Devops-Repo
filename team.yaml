@@ -7,7 +7,7 @@ resource "github_team_membership" "Augustine_Samuel" {
 resource "github_team_membership" "Seyi_Ewegbemi" {
   team_id  = "${github_team.devops-team.id}"
   username = "fairhaven"
-  role     = "member"
+  role     = "maintainer"
 }
 
 resource "github_team_membership" "Daniel_Okechukwu" {
