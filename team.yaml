@@ -1,0 +1,17 @@
+resource "github_team_membership" "Augustine_Samuel" {
+  team_id  = "${github_team.devops-team.id}"
+  username = "olammi"
+  role     = "member"
+}
+
+resource "github_team_membership" "Seyi_Ewegbemi" {
+  team_id  = "${github_team.devops-team.id}"
+  username = "fairhaven"
+  role     = "maintainer"
+}
+
+resource "github_team_membership" "Daniel_Okechukwu" {
+  team_id  = "${github_team.devops-team.id}"
+  username = "ammanny"
+  role     = "maintainer"
+}
