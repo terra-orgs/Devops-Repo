@@ -19,5 +19,5 @@ resource "github_team_membership" "Daniel_Okechukwu" {
 resource "github_team_membership" "prow_job" {
   team_id  = "${github_team.devops-team.id}"
   username = "prow-bot-access"
-  role     = "maintainer"
+  role     = "member"
 }
